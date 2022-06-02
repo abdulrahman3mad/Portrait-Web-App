@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="css/الأسعار والمواعيد.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+
+  <body>
+    <!--start navbar-->
+    <nav>
+      <div class="logo"> <a href="index.html"><h2><span>إرسم </span>حياتك</h2></a></div>
+      <ul>
+        <li><a href="#" target="_blank">المعرض</a>
+        <li><a href="الأسعار والمواعيد.html" target="_blank">السعر والمواعيد</a>
+        <li ><a href="نظام العمل.html" target="_blank"> نظام العمل</a></li>
+        </ul>
+        <button class="mybutton">هيا!</button>
+    </nav>
+    <!--end navbar-->
+
+    <!--start pricesparagraph-->
+
+      <p class="message"><q>هدفنا هو تقديم رسمات بجودة عالية اعتمادا على الصورة المأخوذة من حضرتك، لدينا فريق من الفنانين المحترفين والمهرة. هذا يعني أنه يوجد العديد من الانواع
+      والمساحات تشمل كل شي:زيت،الوان مائية،رصاص ..لذلك وفرنا لك مدى واسع من الانواع والمساحات التى يمكن أن تختار منه ما يناسبك بداية من سعر 200جنيه</q> </p>
+      <hr>
+    <!--end pricesparagraph-->
+    <!--start paintingartworks-->
+      <section class="paintingartworks">
+          <h3>اللوحات</h3>
+          <table>
+            <thead>
+              <tr>
+
+                <td class="currency">
+                  <div>
+                  <h4>العملة</h4>
+                  <select id="myselect">
+                     <option>
+                       جنيه مصري
+                     </option>
+                     <option value="0.33333333333" id="rayal">
+                       ريال سعودي
+                     </option>
+                     <option value="0.2" id="darhm">
+                       درهم امارتي
+                     </option>
+                     <option value="0.0222222" id="koiat">
+                       دينار كويتي
+                     </option>
+                     <option value="0.125" id="qater">
+                       ريال قطري
+                     </option>
+                  </select>
+                </div>
+                </td>
+
+                <td><div><i class="fas fa-user"></i><p>شخص واحد</p></div></td>
+                <td><div><i class="fas fa-user-friends"></i><p>شخصان</p></div></td>
+                <td><div><i class="fas fa-cat"></i><p>حيوان أليف</p></div></td>
+                <td><div><i class="fas fa-home"></i><p>منظر طبيعي</p></div></td>
+                <td><div id="choose"><h4>أختر بنفسك</h4><p>الأشخاص</p><select id="people"></select><p>الحيوانات</p><select id="pets"></select></div></td>
+                </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>20*25 سم</td>
+                <td class="money">150 <bdi>جنيه</bdi></td>
+                <td class="money">190 جنيه</td>
+                <td class="money">290 جنيه</td>
+                <td class="money">340 جنيه</td>
+                <td class="money">-</td>
+
+              </tr>
+              <tr>
+                <td >27*37 سم</td>
+                <td class="money">200 جنيه</td>
+                <td class="money">-</td>
+                <td class="money">250 جنيه</td>
+                <td class="money">300 جنيه</td>
+                <td class="money">-</td>
+              </tr>
+              <tr>
+                <td>30*40 سم</td>
+                <td class="money">280 جنيه</td>
+                <td class="money">340 جنيه</td>
+                <td class="money">400 جنيه</td>
+                <td>-</td>
+                <td class="money">-</td>
+              </tr>
+              <tr>
+                <td>40*50 سم</td>
+                <td class="money">320 جنيه</td>
+                <td class="money">400 جنيه</td>
+                <td class="money">470 جنيه</td>
+                <td class="money">550 جنيه</td>
+                <td class="money">-</td>
+              </tr>
+              <tr>
+                <td>50*60 سم</td>
+                <td class="money">420 جنيه</td>
+                <td class="money">500 جنيه</td>
+                <td>-</td>
+                <td class="money">600 جنيه</td>
+                <td class="money">-</td>
+              </tr>
+              <tr>
+                <td>60*90 سم</td>
+                <td class="money">480 جنيه</td>
+                <td>-</td>
+                <td class="money">570 جنيه</td>
+                <td>-</td>
+                <td class="money">-</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><h4>مقاس خاص</h4><input type="text"/ placeholder="العرض"><input type="text"/ placeholder="الأرتفاع"></td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              <tr>
+            </tfoot>
+          </table>
+      </section>
+      <!--start poplular cases-->
+      <section class="poplularframes">
+        <h3>أشهر الأطر</h3>
+        <div class="size"><p>المقاس</p>
+          <select>
+              <option>20*25cm</option>
+              <option>27*37cm</option>
+              <option>30*40cm</option>
+              <option>40*50cm</option>
+              <option>50*60cm</option>
+        </select>
+         <p>كل الأطر مصنوعة من خشب خالص</p>
+       </div>
+       <section class="frames">
+         <div><img src = "images/type1.jpg" alt = "frame1"> <p>Rolled</p> <span>Free</span> </div>
+         <div><img src = "images/type2.jpg" alt = "frame2"> <p>4cm Mat Black</p> <span>100 جنيه</span> </div>
+         <div><img src = "images/type3.jpg" alt = "frame3"> <p>2cm Black Float Frame</p> <span>100 جنيه</span> </div>
+         <div><img src = "images/type4.jpg" alt = "frame4"> <p>5.5cm Brown Ornate</p> <span>100 جنيه</span> </div>
+       </section>
+      </section>
+        <!--end poplular cases-->
+    <!--end paintingartworks-->
+
+    <section class="paintormoney">
+     <button class="mybutton">اريد رسمة</button>
+     <p>رضا تام أو استرجاع كامل المبلغ</p>
+   </section>
+   <!--end mission-->
+
+   <!--start subscribe section-->
+    <section class="subscribe">
+       <h2> اشترك لمعروفة عروضنا الاستثنائية</h2>
+       <form>
+         <input type="text" placeholder="إسمك هنا"></input>
+         <input type="email" placeholder="بريدك الالكتروني هنا"></input>
+         <input class="sss" type="submit" value="إشترك"></input>
+       </form>
+       <p>خصوصية عالية بيننا وبينك</p>
+    </section>
+   <!--end subscribe section-->
+   <!--start addtion information-->
+    <section class="information">
+     <section class="help">
+       <h3>الشئون</h3>
+      <hr>
+       <section class="list">
+       <ul>
+         <li><a target="_blank" href="#">إتصل بنا</a></li>
+         <li><a target="_blank" href="#">سياسة الخصوصية</a></li>
+         <li><a target="_blank" href="#">الشروط</a></li>
+         <li><a target="_blank" href="#">الضمانات</a></li>
+       </ul>
+       <ul>
+           <li><a target="_blank" href="#">من نحن</a></li>
+           <li><a target="_blank" href="#">كروت الهدايا</a></li>
+           <li><a target="_blank" href="#">الدخول</a></li>
+           <li><a target="_blank" href="#">السياسات  </a></li>
+       </ul>
+     </section>
+     </section>
+
+     <section class="Gallery">
+       <h3>المعرض</h3>
+       <hr>
+       <div class="list">
+       <ul>
+         <li><a href="#" target="_blank">Oil</a></li>
+         <li><a href="#" target="_blank">Charcoal</a></li>
+         <li><a href="#" target="_blank">Watercolor</a></li>
+         <li><a href="#" target="_blank">Black Pencil</a></li>
+         <li><a href="#" target="_blank">Color Pencil</a></li>
+         <li><a href="#" target="_blank">Pastel</a></li>
+         <li><a href="#" target="_blank">Acrylic</a></li>
+       </ul>
+       <ul>
+         <li><a href="#" target="_blank">عائلات</a></li>
+         <a href="#" target="_blank"></a>
+         <li><a href="#" target="_blank">اباء وأبناء</a></li>
+         <li><a href="#" target="_blank">زوجين</a></li>
+         <li><a href="#" target="_blank">أفراد</a></li>
+         <li><a href="#" target="_blank">طفال</a></li>
+         <li><a href="#" target="_blank">حيوانك الأليف</a></li>
+       </ul>
+     </div>
+     </section>
+
+     <section class="importantQa">
+       <h3>أسئلة هامة</h3>
+       <hr>
+       <div class="list">
+       <ul>
+         <li><a target="_blank" href="#">كيف تطلب رسمتك ؟</a></li>
+         <li><a target="_blank" href="#">هل بلدي متاحة ؟</a></li>
+         <li><a target="_blank" href="#">كيف بدأ الخلق ؟</a></li>
+         <li><a target="_blank" href="#">هل يمكن استرجاع الرسمة ؟</a></li>
+       </ul>
+     </div>
+   </section>
+
+      <section class="contact">
+        <h3>للتواصل</h3>
+        <hr>
+        <div class="infoco">
+         <div>
+           <i class="fas fa-mobile"></i>
+            <p>01150430034</p>
+          </div>
+         <div>
+           <i class="fas fa-home"></i>
+           <p>إرسم حياتك، 11شارع عباس متفرع من عين شمس</p>
+         </div>
+    </div>
+      </section>
+
+
+    <section class="follow">
+      <h3>تابعنا</h3>
+      <hr>
+      <div class="infoco">
+       <div>
+         <i class="fab fa-facebook"></i>
+          <p>Facebook</p>
+        </div>
+       <div>
+         <i class="fab fa-instagram-square"></i>
+         <p>instagram</p>
+       </div>
+  </div>
+    </section>
+
+  </section>
+   <!--end additino infrormation-->
+   <!--start footer-->
+   <footer>
+       <p>Copyright@PaintYourLife.com</p>
+   </footer>
+   <!--end footer-->
+ <script src="javascript/أسعار ومواعيد.js"></script>
+ </body>
+</html>
+
+
+  </body>
+</html>

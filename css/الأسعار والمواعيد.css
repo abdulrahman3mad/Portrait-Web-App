@@ -1,0 +1,330 @@
+/*start the main style*/
+*{box-sizing: border-box;padding:0;margin:0}
+body{direction:rtl}
+/*end the main stylies*/
+
+/*start the navbar*/
+nav{
+ z-index:10;
+ display:flex;
+ background-color: #EBEBEB;
+ flex-direction:row;
+ justify-content: space-around;
+ align-items: center;
+ padding: 10px;
+ position:fixed;
+ width:100%;
+ font-family: Amiri;
+}
+
+.logo{font-size:25px;color:#17395D}
+
+ .logo h2 span{color:#00B7C2}
+
+ .logo a{text-decoration: none;color:#17395D}
+
+nav ul{list-style: none;display: flex}
+
+nav ul li{font-size:25px;padding-right:15px}
+
+nav ul li:after{content: "|";opacity: 0.4}
+
+nav ul li:last-child:after{content: ""}
+
+nav ul li a:hover{color:#00B7C2}
+
+nav ul li a{text-decoration: none;color:black}
+
+nav button{
+ background-color:#00B7C2;
+ border:none;
+ border-radius:4px;
+ width:180px;
+ font-size:25px;
+ color:white;
+ height:50px;
+
+}
+/*start pricesparagraph*/
+
+ .message{
+  line-height: 3;
+  font-family: Cairo;
+  padding-top:100px;
+  text-align: center;
+  width:600px;
+  margin:0 auto;
+  opacity: 0.6;
+  color:black;
+}
+
+hr{opacity: 0.2;width:700px;margin:0 auto}
+/*end pricesparagraph*/
+
+/*start paintingartworks*/
+ .paintingartworks {
+   display: flex;
+   flex-direction: column;
+   padding-top:25px;
+   margin-right:80px;
+   width:65%;
+
+ }
+  .paintingartworks h3,
+  .poplularframes h3{
+   font-size: 40px;
+   color:#00B7C2;
+   font-family:Cairo;
+   margin-bottom: 20px;
+ }
+ .paintingartworks table thead tr{color:#27496D;font-size:17px}
+
+ .paintingartworks table tr td:nth-child(even){background: #FBFBFB}
+
+ .paintingartworks table  tr td:first-child{border-top:none;border-left:none;border-radius: 0}
+
+ .paintingartworks table select{
+   font-family:Amiri;
+ }
+
+.paintingartworks table thead tr td {
+  padding-bottom: 40px;
+}
+  .paintingartworks table tr td{
+   padding:15px;
+   border:2px solid #EBEBEB;
+   border-radius: 5px;
+}
+
+ table div{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+ .paintingartworks table tr td i{
+   font-size: 40px;
+   color:#00B7C2;
+   margin-top:40px;
+ }
+ .paintingartworks table tr td p
+ {
+   margin-top:30px;
+   color:#27496D;
+   font-family:Amiri;
+ }
+ .paintingartworks table tr h4
+   {
+   margin-bottom:10px;
+   margin-top:40px;
+   font-family:Cairo;
+   color:#00B7C2;
+ }
+ .paintingartworks table tfoot tr h4{
+   margin-top:0;
+ }
+
+ .paintingartworks select {
+   margin-top:10px;
+   width:100px;
+   display: block;
+   color:#27496D;
+   box-shadow: 2px 2px 3px #eeeeee inset, -2px -2px 3px #eeeeee inset;
+   border:0.5px solid black;
+   padding:2px 8px;
+ }
+ .paintingartworks table tr td:last-child p{margin-top:0}
+
+  .poplularframes{display: flex;flex-direction: column;margin-right:80px;margin-top:30px}
+
+  .poplularframes h3{font-size:25px}
+
+ .poplularframes div{display: flex;margin-bottom: 10px}
+
+ .poplularframes .size p {margin-left:8px;font-family: Amiri;opacity: 0.8}
+
+ .poplularframes .frames{display: flex}
+
+ .poplularframes select{
+   border-radius: 4px;
+   margin-left:8px;
+   width:100px;
+   display: block;
+   color:#27496D;
+   box-shadow: 2px 2px 3px #eeeeee inset, -2px -2px 3px #eeeeee inset;
+   border:0.5px solid black;
+   padding:2px 8px;
+ }
+
+ .poplularframes .frames div{
+  display: flex;
+  flex-direction: column;
+  height:300px;
+  width:200px;
+  margin-left: 20px;
+  text-align: center;
+  border:1px solid grey
+ }
+ .poplularframes .frames div:last-child{margin-left: 0}
+
+ .poplularframes .frames div img{height:70%;border:1px solid #1ABEC8}
+
+ .poplularframes .frames div p{margin-top:20px;opacity: 0.9;font-family: Amiri}
+
+ .poplularframes .frames div span{color:#1ABEC8}
+
+ /*end paintingartworks*/
+
+/*end the navbar*/
+
+.paintormoney{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .paintormoney button{
+   margin-top:70px;
+   background-color:#00B7C2;
+   border:none;
+   border-radius:4px;
+   width:250px;
+   font-size:25px;
+   color:white;
+ }
+ .paintormoney p{color:#27496D;margin-top: 10px;font-size: 20px}
+/*end mission*/
+
+/*start subscribe section*/
+.subscribe{
+    padding:50px 0;
+    background: #27496D;
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+  }
+
+.subscribe h2{margin-bottom: 20px;font-size: 25px}
+
+.subscribe form input:nth-child(-n+2){
+    width:250px;
+    padding:10px 8px 7px 7px;
+    border-radius: 3px;
+    border:none;
+    box-shadow: 0.5px 0.5px 2px grey inset,-0.5px -0.5px 2px grey inset ;
+    margin-bottom: 30px;
+   }
+
+
+.subscribe form input:nth-child(2){
+  margin-right:20px;
+}
+.subscribe form input[type="submit"]{
+
+     display: block;
+     margin:0 auto;
+     width:100px;
+     padding:5px 8px;
+     color:#27496D;
+     border-radius: 3px;
+     border:none;
+     margin-bottom: 30px;
+   }
+
+.subscribe p{opacity:0.2;}
+
+.subscribe p:hover{opacity:1}
+/*end subscribe section*/
+
+/*start addition information*/
+.information {
+  padding:40px 30px;
+  justify-content: space-around;
+  background-color:#00B7C2;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 180px 200px;
+  text-align: center;
+}
+.information h3{margin-bottom: 10px;color:#16385C;font-weight:bold;}
+
+.information hr{
+  border:none;
+  display: block;
+  height:2px;
+  opacity: 0.2
+}
+
+.information  .list  {margin-top:15px;display: flex;padding-right:75px}
+
+.information ul{list-style: none;padding-left:0}
+
+.information ul:nth-child(2){margin-right:20px}
+
+.information ul li a{text-decoration: none}
+
+.information ul li{margin-bottom: 9px}
+
+.information ul li a{color:white}
+
+.information .contact,
+.infromation .follow{
+  margin-top:30px;
+  display: flex;
+  flex-flow:column;
+  align-items: center;
+}
+
+.information .follow{margin-top:100px}
+
+.information .infoco{margin-top:10px}
+
+.information .infoco div{display: flex;margin-top:5px}
+
+.information  i{margin-left: 10px;margin-top:3px;color:white;animation:iconmoving 1s infitiy ease-in-out;
+
+
+}
+
+.information .follow {display: flex;flex-direction: column;align-items: center;}
+
+.information .contact .infoco div:last-child i{margin-left:9px}
+/*end addition information*/
+
+/*start footer*/
+  footer{
+    background:#17395D;
+    height:50px;
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+  }
+/*end footer*/
+
+/*myframework */
+.mybutton{
+  background-color:#00B7C2;
+  border:none;
+  border-radius:4px;
+  width:180px;
+  font-size:25px;
+  color:white;
+  height:50px;
+  font-family: Cairo;
+}
+
+p{
+  font-family: Amiri;
+  opacity: 0.9;
+  color:white;
+}
+
+h3,h4,h2{
+  font-family:Cairo;
+  opacity:0.9
+}
+/*end myframework*/

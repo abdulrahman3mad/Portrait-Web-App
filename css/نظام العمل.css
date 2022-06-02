@@ -1,0 +1,238 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+/*start the navbar*/
+
+body{
+  direction: rtl;
+}
+
+nav{
+ display:flex;
+ background-color:rgba(90%,90%,90%,80%);
+ flex-direction:row;
+ justify-content: space-around;
+ align-items: center;
+ padding: 10px;
+ position:fixed;
+ width:100%;
+ font-family: Amiri;
+}
+
+.logo{font-size:25px}
+
+.logo a{
+  color:#17395D;
+  text-decoration: none;
+}
+
+ .logo h2 span{color:#00B7C2}
+
+nav ul{list-style: none;display: flex}
+
+nav ul li{font-size:25px;padding-right:15px;font-family: Amiri}
+
+nav ul li:after{content: "|";opacity: 0.4}
+
+nav ul li:last-child:after{content: ""}
+
+nav ul li a:hover{color:#00B7C2}
+
+nav ul li a{text-decoration: none;color:black}
+
+nav button{
+ background-color:#00B7C2;
+ border:none;
+ border-radius:4px;
+ width:180px;
+ font-size:25px;
+ color:white;
+ height:50px;
+
+}
+
+/*end the navbar*/
+/*start header*/
+.headsec{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+
+}
+.headsec .header{
+  font-size: 40px;
+  color:#27496D;
+  margin-top: 80px;
+  font-family:Cairo
+}
+
+.headsec span{
+
+  width:400px;
+  height:2px;
+  background-color: black;
+  opacity: 0.2
+}
+/*end header*/
+
+
+.paintormoney{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.paintormoney button{
+     margin-top:70px;
+     border:none;
+     border-radius:4px;
+     width:250px;
+     font-size:25px;
+     color:white;
+   }
+
+.paintormoney p{color:#27496D;margin-top: 10px;font-size: 20px}
+ /*end mission*/
+
+/*start subscribe section*/
+.subscribe{
+    padding:50px 0;
+    background: #27496D;
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+  }
+
+.subscribe h2{margin-bottom: 20px;font-size: 25px}
+
+.subscribe form input:nth-child(-n+2){
+    width:250px;
+    padding:10px 8px 7px 7px;
+    border-radius: 3px;
+    border:none;
+    box-shadow: 0.5px 0.5px 2px grey inset,-0.5px -0.5px 2px grey inset ;
+    margin-bottom: 30px;
+   }
+
+
+.subscribe form input:nth-child(2){
+  margin-right:20px;
+}
+.subscribe form input[type="submit"]{
+
+     display: block;
+     margin:0 auto;
+     width:100px;
+     padding:5px 8px;
+     color:#27496D;
+     border-radius: 3px;
+     border:none;
+     margin-bottom: 30px;
+   }
+
+.subscribe p{opacity:0.2;}
+
+.subscribe p:hover{opacity:1}
+/*end subscribe section*/
+
+/*start addition information*/
+.information {
+  padding:40px 30px;
+  justify-content: space-around;
+  background-color:#00B7C2;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 180px 200px;
+  text-align: center;
+}
+.information h3{margin-bottom: 10px;color:#16385C;font-weight:bold;}
+
+.information hr{
+  border:none;
+  display: block;
+  height:2px;
+  opacity: 0.2
+}
+
+.information  .list  {margin-top:15px;display: flex;padding-right:75px}
+
+.information ul{list-style: none;padding-left:0}
+
+.information ul:nth-child(2){margin-right:20px}
+
+.information ul li a{text-decoration: none}
+
+.information ul li{margin-bottom: 9px}
+
+.information ul li a{color:white}
+
+.information .contact,
+.infromation .follow{
+  margin-top:30px;
+  display: flex;
+  flex-flow:column;
+  align-items: center;
+}
+
+.information .follow{margin-top:100px}
+
+.information .infoco{margin-top:10px}
+
+.information .infoco div{display: flex;margin-top:5px}
+
+.information  i{margin-left: 10px;margin-top:3px;color:white;animation:iconmoving 1s infitiy ease-in-out;
+
+
+}
+
+.information .follow {display: flex;flex-direction: column;align-items: center;}
+
+.information .contact .infoco div:last-child i{margin-left:9px}
+/*end addition information*/
+
+/*start footer*/
+    footer{
+      background:#27496D;
+      height:50px;
+      display: flex;
+      color:white;
+      justify-content: center;
+      align-items: center;
+    }
+/*end footer*/
+
+/*aniamtion*/
+  @keyframes headershowing { from{opacity:0}   to{opacity:1} }
+  @keyframes iconmoving {from{transform: scale(1.5,1.5)}  to{transform: scale(1,1)}}
+/*animation*/
+
+
+ /*myframework */
+ .mybutton{
+   background-color:#00B7C2;
+   border:none;
+   border-radius:4px;
+   width:180px;
+   font-size:25px;
+   color:white;
+   height:50px;
+   font-family: Cairo;
+ }
+
+ p{
+   font-family: Amiri;
+   opacity: 0.9;
+   color:white;
+ }
+
+ h3,h4,h2{
+   font-family:Cairo;
+   opacity:0.9
+ }
+ /*end myframework*/

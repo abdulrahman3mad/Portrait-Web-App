@@ -1,0 +1,448 @@
+/*start the main stylies*/
+ *{box-sizing: border-box;padding:0;margin:0;}
+ body{direction: rtl}
+/*end the main stylies*/
+
+ /*start the navbar*/
+nav{
+  z-index:10;
+  display:flex;
+  background-color:white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  position:fixed;
+  width:100%;
+  font-family: Amiri;
+}
+
+.logo{font-size:25px}
+
+.logo h2 span{color:#00B7C2;}
+
+nav ul{list-style: none;display: flex;}
+
+nav ul li{font-size:25px;padding-right:15px;}
+
+nav ul li:after{content: "|";opacity: 0.4}
+
+nav ul li:last-child:after{content: ""}
+
+nav ul li a:hover{color:#00B7C2;}
+hr{
+  background-color:#138199;
+  opacity: 0.2
+}
+
+nav ul li a{text-decoration: none;color:black}
+/*end the navbar*/
+
+/*start header*/
+ header .slider{
+   background-image: url("../images/paint2.jpg");
+   background-size:cover;
+   height:500px;
+}
+
+ header .slider .text{
+   color:white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top:50px;
+ }
+
+ header .slider .text h2{
+   padding-top:150px;
+   font-size:50px;
+   animation:headershowing 3s 1 ease-in-out ;
+   animation-fill-mode:forwards;
+ }
+
+ header .slider .text p{
+   font-size:20px;
+   animation:headershowing 4s 1 ease-in-out ;
+   animation-fill-mode:forwards;
+ }
+
+ header .slider button{
+   margin-top:30px;
+   animation:headershowing 4s 1 ease-in-out ;
+   animation-fill-mode:forwards;
+}
+.ourmission{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   background: #00B7C2;
+   margin-top:1px;
+   margin-bottom: 40px;
+   border:1px solid grey;
+   height:90px;
+  }
+
+.ourmission  h2{margin-bottom: 7px;color:black;opacity: 0.6}
+/*end header*/
+
+/*start gallery section*/
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: auto;
+  width:600px;
+  margin:0 auto;
+  }
+
+  .gallery button{
+    font-family: Cairo;
+  }
+
+  .gallery div{
+    margin-bottom: 20px;
+  }
+  .gallery div button{
+    border-radius: 0
+  }
+
+  .gallery div span{
+    width:180px;
+    height:3px;
+    display: block;
+    background-color:#27496D;
+  }
+  .gallery::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.gallery::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #27496D;
+}
+
+.gallery ul{
+  display: flex;
+  flex-direction:row;
+  overflow: hidden;
+  list-style: none;
+  }
+
+.gallery ul li{padding:2px;height:300px}
+
+
+
+.gallery ul li img{box-shadow: 1px 1px 1px grey,-1px -1px 1px grey;height:100%}
+
+.message{
+  margin-top:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00B7C2;
+  }
+
+.message h2{margin-bottom:0;font-size:28px;color:white;padding-top: 20px;}
+
+.message button{
+  margin:20px 0;
+  padding:20px 30px;
+  background-color:#37597D;
+  font-size:15px;
+  }
+/*end gallery section*/
+
+/*start artist*/
+.artist{
+  margin-top:40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  }
+
+  .artist button{
+    font-family:Cairo
+  }
+
+.artist h3{font-size:40px;color:#27496D}
+
+.artistsection{
+  display: grid;
+  grid-template-columns: 450px 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+.artistsection .card{
+  box-shadow: 2px 2px 1px #C1C5C9,-2px -2px 1px #C1C5C9;
+  height:200px;
+  width:400px;
+  background-color:#00B7C2;
+  margin:30px;
+  text-align: center;
+  padding:0 60px;
+  transition: background-color 0.5s ease-in-out;
+}
+.artistsection .card:hover{
+  background-color:#27496D
+}
+
+.artistsection .card img{
+  background-color:white;
+  padding:3px;
+  width:80px;
+  height:80px;
+  border-radius: 50%;
+  transform: translateY(-40px);
+}
+
+.artistsection .card p{
+  padding-bottom: 10px;
+  padding-top: 0;
+  text-align: center;
+}
+
+
+ /*end artist*/
+
+ /*start mission*/
+.mission
+  {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+ .mission button{
+   padding:0 30px;
+   font-family:Cairo;
+   margin-top:30px;
+   margin-bottom: 30px;
+ }
+ .mission p{color:black}
+
+.mission section:nth-child(1) h2{margin-bottom: 30px;color:#37597D}
+
+.mission section:last-child h2{margin-top:50px}
+
+.commitment{
+     display: grid;
+     grid-template-columns: 400px 400px;
+     justify-content: center;
+     align-items: center;
+     padding-right:200px;
+     background-color:#00B7C2;
+     width:900px;
+     margin:0 auto;
+
+  }
+  .commitment p{
+    color:white;
+  }
+
+ .commitment i{
+   color:black;
+ }
+.commitment div{margin-bottom: 15px;display: flex;flex-direction: row}
+
+
+i{font-size: 12px;margin:11px 0 0 5px;color:green;animation-name: iconmoving;animation-duration:2s;animation-iteration-count: infinite;animation-direction: alternate-reverse;}
+
+.videos{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: auto;
+    margin-top:70px;
+    margin-bottom: 50px;
+  }
+
+.firstvideo{
+  height:220px;
+  border:2px solid black;
+  width:305px;
+  margin-left:50px;
+  background-color:#00B7C2;
+  display: flex;
+  flex-direction: column
+}
+
+.secondvideo{
+  height:260px;
+  border:2px solid black;
+  width:305px;
+  background-color:#00B7C2;
+}
+
+.mission .videos p{color:white;margin-top:10px;font-size:20px;padding:0 30px}
+
+.videos video{box-shadow: 2px 2px 5px black,-2px -2px 5px black}
+
+.paintormoney{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.paintormoney button{
+     margin-top:70px;
+     border:none;
+     border-radius:4px;
+     width:250px;
+     font-size:25px;
+     color:white;
+   }
+
+.paintormoney p{color:#27496D;margin-top: 10px;font-size: 20px}
+ /*end mission*/
+
+/*start subscribe section*/
+.subscribe{
+    padding:50px 0;
+    background: #27496D;
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+  }
+
+.subscribe h2{margin-bottom: 20px;font-size: 25px}
+
+.subscribe form input:nth-child(-n+2){
+    width:250px;
+    padding:10px 8px 7px 7px;
+    border-radius: 3px;
+    border:none;
+    box-shadow: 0.5px 0.5px 2px grey inset,-0.5px -0.5px 2px grey inset ;
+    margin-bottom: 30px;
+   }
+
+
+.subscribe form input:nth-child(2){
+  margin-right:20px;
+}
+.subscribe form input[type="submit"]{
+
+     display: block;
+     margin:0 auto;
+     width:100px;
+     padding:5px 8px;
+     color:#27496D;
+     border-radius: 3px;
+     border:none;
+     margin-bottom: 30px;
+   }
+
+.subscribe p{opacity:0.2;}
+
+.subscribe p:hover{opacity:1}
+/*end subscribe section*/
+
+/*start addition information*/
+.information {
+  padding:40px 30px;
+  justify-content: space-around;
+  background-color:#00B7C2;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 180px 200px;
+  text-align: center;
+}
+.information h3{margin-bottom: 10px;color:#16385C;font-weight:bold;}
+
+.information hr{
+  border:none;
+  display: block;
+  height:2px;
+  opacity: 0.2
+}
+
+.information  .list  {margin-top:15px;display: flex;padding-right:75px}
+
+.information ul{list-style: none;padding-left:0}
+
+.information ul:nth-child(2){margin-right:20px}
+
+.information ul li a{text-decoration: none}
+
+.information ul li{margin-bottom: 9px}
+
+.information ul li a{color:white}
+
+.information .contact,
+.infromation .follow{
+  margin-top:30px;
+  display: flex;
+  flex-flow:column;
+  align-items: center;
+}
+
+.information .follow{margin-top:100px}
+
+.information .infoco{margin-top:10px}
+
+.information .infoco div{display: flex;margin-top:5px}
+
+.information  i{margin-left: 10px;margin-top:3px;color:white;animation:iconmoving 1s infitiy ease-in-out;
+
+
+}
+
+.information .follow {display: flex;flex-direction: column;align-items: center;}
+
+.information .contact .infoco div:last-child i{margin-left:9px}
+/*end addition information*/
+
+/*start footer*/
+    footer{
+      background:#27496D;
+      height:50px;
+      display: flex;
+      color:white;
+      justify-content: center;
+      align-items: center;
+    }
+/*end footer*/
+
+/*aniamtion*/
+  @keyframes headershowing { from{opacity:0}   to{opacity:1} }
+  @keyframes iconmoving {from{transform: scale(1.5,1.5)}  to{transform: scale(1,1)}}
+/*animation*/
+
+
+ /*myframework */
+ .mybutton{
+   background-color:#00B7C2;
+   border:none;
+   border-radius:4px;
+   width:180px;
+   font-size:25px;
+   color:white;
+   height:50px;
+   font-family: Cairo;
+ }
+
+ p{
+   font-family: Amiri;
+   opacity: 0.9;
+   color:white;
+ }
+
+ h3,h4,h2{
+   font-family:Cairo;
+   opacity:0.9
+ }
+ /*end myframework*/
